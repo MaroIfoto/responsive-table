@@ -1,0 +1,169 @@
+:root {
+    --background: #29263d;
+    --table-background: #1c182a;
+    --primary: #ffd45e;
+    --text-color: #FFFFFF;
+    --gray: #A0A7b1;
+    --th-background: #2e2b43;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--text-color);
+}
+
+.table-widget{
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
+    text-align: left;
+    overflow-x: auto;
+    user-select: none;
+    color: var(--text-color);
+}
+
+.table-widget table {
+    max-width: fit-content;
+    border-collapse: collapse;
+}
+
+.table-widget thead tr{
+    background: var(--th-background);
+}
+
+.table-widget .caption {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-widget .export-btn {
+    gap: 0.5rem;
+    align-items: center;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-weight: 600;
+    background: none;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+.table-widget .export-btn:hover {
+    color: var(--primary);
+}
+
+.table-widget .export-btn span {
+    width: 1.45rem;
+    height: 1.45rem;
+    /* padding-top: 0.5rem; */
+}
+
+.table-widget th {
+    padding: 1.25rem 1rem;
+    font-size: 1.05rem;
+    font-weight: 800;
+    vertical-align: middle;
+}
+
+.table-widget td {
+    padding: 1rem;
+    background: transparent;
+    color: inherit;
+    vertical-align: middle;
+}
+
+.table-widget tbody tr {
+    transition: all 0.5s;
+}
+
+.table-widget tbody tr:hover {
+    cursor: pointer;
+    background: var(--th-background);
+}
+
+.team-member-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.team-member-profile img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.profile-info_name {
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.status {
+    display: flex;
+    font-weight: 700;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.status-circle {
+    border-radius: 50%;
+    display: inline-block;
+    height: 0.5rem;
+    width: 0.5rem;
+}
+
+.status-active {
+    background: #2ecc71;
+}
+
+.status-inactive {
+    background: red;
+}
+
+.status-offline {
+    background: var(--gray);
+}
+
+.tags {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tag {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    color: var(--background);
+}
+
+.tag-marketing {
+    background: #ffd45e;
+}
+
+.tag-design {
+    background: #bd8eff;
+}
+
+.tag-QA {
+    background: #ff8585;
+}
+
+.tag-dev {
+    background: #89b6ff;
+}
+
+.tag::first-letter {
+    text-transform: uppercase;
+}
